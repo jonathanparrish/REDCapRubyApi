@@ -22,16 +22,19 @@ The Sandbox we will use a URL and Token Provided by Vanderbilt
     token: '8E66DB6844D58E990075AFB51658A002'
 
 ##### Launch Sandbox
-    `$ irb -r ./redcap_api_sandbox.rb`
+`$ irb -r ./redcap_api_sandbox.rb`
 
 ##### RedcapApi Sample Calls
-    Ruby RedcapApi Instance: `$ @redcap_api`
-    Get RedcapApi Metadata: `$ @redcap_api.get_metadata`
-    Get All RedcapApi Records: `$ @redcap_api.get_all_records`
+Ruby RedcapApi Instance: `$ @redcap_api`
+
+Get RedcapApi Metadata: `$ @redcap_api.get_metadata`
+
+Get All RedcapApi Records: `$ @redcap_api.get_all_records`
 
 ##### Set Your Parameters
-    Url: `$ @redcap_api.url = `
-    Token: `$ @redcap_api.token = `
+Url: `$ @redcap_api.url = `
+
+Token: `$ @redcap_api.token = `
 
 ## Notes
 Resource for an [REDCap API Intro](http://sburns.org/2013/07/22/intro-to-redcap-api.html).
