@@ -39,6 +39,7 @@ The Sandbox we will use a URL and Token Provided by Vanderbilt
         $ @redcap_api.token =
 
 ## Notes
-Resource for an [REDCap API Intro](http://sburns.org/2013/07/22/intro-to-redcap-api.html).
+Link to view [REDCap v5.9.18 API Docs](https://rawgit.com/ChetCorey/REDCapRubyApi/master/redcap_api_doc/redcap_v5.9.18.html) that are in the redcap_api_doc directory.
+Other Resources [REDCap API Intro](http://sburns.org/2013/07/22/intro-to-redcap-api.html).
 
 *Good Luck and enjoy*
