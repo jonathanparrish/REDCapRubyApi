@@ -8,8 +8,15 @@ class RedcapApi
     @token = token
   end
 
-  def create_record(data)
-    HTTParty.post(@url,
+  def create_record(record)
+    #REDCap does not have a way to submit a record without a record_id
+    #Therefore I must create a record id that is one larger than the last record
+
+    new_record_id = (get_all_records.last['record_id'].to_i + 1).to_s
+    record['record_id'] = new_record_id
+    data = [record].to_json
+
+    response = HTTParty.post(@url,
       :body => {
           :token => @token,
           :content => 'record',
@@ -19,9 +26,15 @@ class RedcapApi
           :data => data
         }
       )
+
+    if response["count"] == 1
+      return {success: true, new_record: data, record_id: new_record_id}
+    end
   end
 
-  def update_record(data)
+  def update_record(record)
+    data = [record].to_json
+
     HTTParty.post(@url,
       :body => {
           :token => @token,
