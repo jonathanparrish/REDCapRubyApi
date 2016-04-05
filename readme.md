@@ -1,6 +1,6 @@
 # Ruby REDCap API
 This ruby class will allow you to make calls to a REDCap API using HTTParty
-To install HTTParty run: `$ gem install HTTParty` in your terminal.
+To install HTTParty run: `$ gem install httparty` in your terminal.
 
 ##### RedcapApi Methods
 
